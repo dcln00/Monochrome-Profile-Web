@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #222222;
+  color: #ededed;
+}
+
+::selection {
+  background-color: #222222;
+  color: #ededed;
+}
+
+body {
+  color: #ededed;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(120deg, #000000bb, rgba(0, 0, 255, 0)), url("https://images.pexels.com/photos/1492232/pexels-photo-1492232.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+}
+main a {
+  color: #ededed;
+  transition-duration: 1s;
+  transition-property: color;
+}
+main a :hover {
+  color: #ededede0;
+}
+main p {
+  font-family: "Cutive Mono", monospace;
+  font-size: 18px;
+}
+main #left {
+  flex-basis: 40%;
+  margin-left: 100px;
+}
+main #left h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  letter-spacing: 0.16em;
+}
+main #left .desc {
+  font-family: "Cutive Mono", monospace;
+  font-size: 18px;
+  margin-top: -10px;
+}
+main #left hr {
+  width: 10%;
+  border: 1px solid #ededed;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+main #left ul > li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  main {
+    margin: 0;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  main #left {
+    background: black;
+    margin-left: 0;
+    flex-basis: 100%;
+    padding: 30px 0;
+  }
+  main #left h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  main #left .desc {
+    text-align: center;
+    font-size: 20px;
+  }
+  main #left hr {
+    margin: 20px auto;
+  }
+  main #left p {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 20px;
+  }
+  main #left ul {
+    display: flex;
+    justify-content: center;
+    margin: -20px 0 20px 0;
+  }
+  main #left li {
+    font-size: 10px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

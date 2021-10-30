@@ -1,0 +1,80 @@
+@import 'fonts';
+@import 'colors';
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+::selection {
+    background-color: #222222;
+    color: #ededed;
+}
+
+body {
+    color: $main-color;
+    overflow:hidden;
+    
+}
+
+main {
+    height:100vh;
+    display: flex;
+    align-items:center;
+    background-image:linear-gradient(120deg, #000000bb, rgba(0, 0, 255, 0)), url('https://images.pexels.com/photos/1492232/pexels-photo-1492232.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+    
+
+    a {
+        color: $main-color;
+        transition-duration: 1s;
+        transition-property: color;
+
+        :hover{
+             color: #ededede0;   
+        }
+    }
+
+    p {
+        font-family: 'Cutive Mono', monospace;
+        font-size:18px;
+    }
+
+    #left {
+        flex-basis: 40%;
+        margin-left:100px;
+        
+
+        h1{
+            font-family: $heading-font;
+            font-size: 100px;
+            letter-spacing: 0.16em;
+        }
+
+        .desc {
+            font-family: $body-font;
+            font-size:18px;
+            margin-top: -10px;
+        }
+
+        hr {
+            width:10%;
+            border:1px solid $main-color;
+            margin-top: 20px;
+            margin-bottom:50px;
+        }
+
+        ul > li {
+            display:inline-block;
+            margin-right:20px;
+            margin-top: 30px;
+            font-size:20px;
+        }
+
+
+    }
+}
+
+@import 'mobile';
