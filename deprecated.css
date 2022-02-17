@@ -1,0 +1,22 @@
+[class*=" icon-"]:before,
+[class^="icon-"]:before,
+[data-icon]:before {
+    font-family: socialico !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: socialico;
+    src: url(https://static.tumblr.com/qhv4yti/SHxr7ftrg/socialico.ttf);
+  src: url(https://static.tumblr.com/qhv4yti/ZJCr7ftsd/socialico_plus.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+[data-icon]:before {
+    content: attr(data-icon);
+}
